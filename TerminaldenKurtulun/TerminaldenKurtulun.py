@@ -236,7 +236,6 @@ def ddekur():
         buton.config(text="Ana menüye dön",command=islemsecim)
 def dekurucu():
     islemsecimbuton10.destroy()
-    islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
     yazi2.config(text="Lütfen kurmak istediğiniz masaüstü ortamını seçiniz.")
     buton.config(text="KDE'yi kur",command=kdekur)
