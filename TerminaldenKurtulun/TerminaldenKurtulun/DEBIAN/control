@@ -1,0 +1,7 @@
+Package: TerminaldenKurtulun
+Version: 1.0
+Section: base
+Priority: GPL
+Maintainer: https://forum.shiftdelete.net/uyeler/ram_kafasi.599447/
+Architecture: i386
+Description: Terminalden kurtulun! Son kullanıcı için basitleştirildi.
