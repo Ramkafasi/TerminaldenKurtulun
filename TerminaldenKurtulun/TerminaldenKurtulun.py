@@ -235,6 +235,9 @@ def ddekur():
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)
 def dekurucu():
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
     yazi2.config(text="Lütfen kurmak istediğiniz masaüstü ortamını seçiniz.")
     buton.config(text="KDE'yi kur",command=kdekur)
     islemsecimbuton1.config(text="GNOME kur",command=gnomekur)
