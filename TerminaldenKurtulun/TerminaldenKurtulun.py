@@ -19,6 +19,7 @@ def gnomekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install gnome -y")
         os.system("sudo apt install gnome-shell")
@@ -42,6 +43,7 @@ def kdekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install kde-plasma-desktop -y")
         yazi2.config(text="KDE Plasma masaüstü ortamı kurma işlemi tamamlandı.")
@@ -64,6 +66,7 @@ def cinnamonkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install cinnamon -y")
         yazi2.config(text="Cinnamon masaüstü ortamı kurma işlemi tamamlandı.")
@@ -86,6 +89,7 @@ def lxdekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install lxde -y")
         yazi2.config(text="LXDE masaüstü ortamı kurma işlemi tamamlandı.")
@@ -108,6 +112,7 @@ def lxqtkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install software-properties-common -y")
         os.system("sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily")
@@ -134,6 +139,7 @@ def matekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install mate-desktop-environment-core -y")
         os.system("sudo apt install mate-desktop-environment -y")
@@ -158,6 +164,7 @@ def openboxkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install openbox -y")
         yazi2.config(text="OpenBox masaüstü ortamı kurma işlemi tamamlandı.")
@@ -180,6 +187,7 @@ def xfcekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install xfce4 -y")
         yazi2.config(text="XFCE masaüstü ortamı kurma işlemi tamamlandı.")
@@ -202,6 +210,7 @@ def i3kur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install i3 -y")
         yazi2.config(text="İ3 masaüstü ortamı kurma işlemi tamamlandı.")
@@ -224,9 +233,10 @@ def ddekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install software-properties-common -y")
-        os.system("sudo add-apt-repository ppa:leaeasy/dde")
+        os.system("sudo add-apt-repository ppa:ubuntudde-dev/stable -y")
         os.system("sudo apt update")
         os.system("sudo apt install dde")
         yazi2.config(text="Deepin masaüstü ortamı kurma işlemi tamamlandı.")
@@ -235,8 +245,6 @@ def ddekur():
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)
 def dekurucu():
-    islemsecimbuton10.destroy()
-    islemsecimbuton12.destroy()
     yazi2.config(text="Lütfen kurmak istediğiniz masaüstü ortamını seçiniz.")
     buton.config(text="KDE'yi kur",command=kdekur)
     islemsecimbuton1.config(text="GNOME kur",command=gnomekur)
@@ -248,6 +256,10 @@ def dekurucu():
     islemsecimbuton7.config(text="OpenBox kur",command=openboxkur)
     islemsecimbuton8.config(text="İ3 kur",command=i3kur)
     islemsecimbuton9.config(text="Deepin DE kur",command=ddekur)
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
 def kdesil():
     yazi2.config(text="KDE kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
@@ -263,6 +275,7 @@ def kdesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge kde* -y")
         yazi2.config(text="KDE Plasma masaüstü ortamı kaldırma işlemi tamamlandı.")
@@ -285,6 +298,7 @@ def gnomesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge gnome* -y")
         yazi2.config(text="GNOME masaüstü ortamı kaldırma işlemi tamamlandı.")
@@ -307,6 +321,7 @@ def cinnamonsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge cinnamon* -y")
         yazi2.config(text="Cinnamon masaüstü ortamı kaldırma işlemi tamamlandı.")
@@ -329,6 +344,7 @@ def lxdesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge lxde* -y")
         os.system("sudo apt autoremove -y")
@@ -352,6 +368,7 @@ def lxqtsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge lxde* -y")
         os.system("sudo apt autoremove -y")
@@ -375,6 +392,7 @@ def matesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge mate-desktop* -y")
         os.system("sudo apt autoremove -y")
@@ -398,6 +416,7 @@ def xfcesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt autoremove")
         os.system("sudo apt -f install -y")
@@ -426,6 +445,7 @@ def openboxsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge openbox* -y")
         os.system("sudo apt autoremove -y")
@@ -449,6 +469,7 @@ def i3sil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge i3* -y")
         os.system("sudo apt autoremove -y")
@@ -472,6 +493,7 @@ def ddesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge dde* -y")
         os.system("sudo apt autoremove -y")
@@ -481,8 +503,6 @@ def ddesil():
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim) 
 def desilici():
-    islemsecimbuton10.destroy()
-    islemsecimbuton12.destroy()
     yazi2.config(text="Lütfen kaldırmak istediğiniz masaüstü ortamını seçiniz.")
     buton.config(text="KDE'yi kaldır",command=kdesil)
     islemsecimbuton1.config(text="GNOME'u kaldır",command=gnomesil)
@@ -494,6 +514,10 @@ def desilici():
     islemsecimbuton7.config(text="OpenBox'ı kaldır",command=openboxsil)
     islemsecimbuton8.config(text="İ3'ü kaldır",command=i3sil)
     islemsecimbuton9.config(text="Deepin DE'yi kaldır",command=ddesil)
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
 def plankayar():
     yazi2.config(text="Bu işlem sırasında daha önceden Plank programını kurmuş olmanız gerekmektedir.")
     time.sleep(0.1)
@@ -509,6 +533,7 @@ def plankayar():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("plank --preferences")
         yazi2.config(text="Plank için yaptığınız yapılandırma işlemi bitmiştir.")
@@ -518,6 +543,19 @@ def plankayar():
         buton.config(text="Ana menüye dön",command=islemsecim)
 def cupsayar():
     yazi2.config(text="Bu işlem sırasında daha önceden CUPS programını kurmuş olmanız gerekmektedir.")
+    islemsecimbuton1.destroy()
+    islemsecimbuton2.destroy()
+    islemsecimbuton3.destroy()
+    islemsecimbuton4.destroy()
+    islemsecimbuton5.destroy()
+    islemsecimbuton6.destroy()
+    islemsecimbuton7.destroy()
+    islemsecimbuton8.destroy()
+    islemsecimbuton9.destroy()
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("x-www-browser localhost:631")
         yazi2.config(text="CUPS için yaptığınız yapılandırma işlemi bitmiştir.")
@@ -541,6 +579,7 @@ def eskipaketsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt clean -y")
         os.system("sudo apt autoremove -y")
@@ -564,6 +603,7 @@ def dpkgconfigure():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo dpkg --configure -a")
         yazi2.config(text="DPKG yapılandırma işlemi tamamlanmıştır.")
@@ -586,6 +626,7 @@ def kilitacar():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo killall apt apt-get")
         os.system("sudo rm /var/lib/apt/lists/lock")
@@ -614,6 +655,7 @@ def wineayar():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo winecfg")
         yazi2.config(text="WINE için yaptığınız yapılandırma işlemi bitirilmiştir.")
@@ -636,6 +678,7 @@ def cupssil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge cups* -y")
         yazi2.config(text="CUPS yazıcı yöneticisi programının kaldırılma işlemi bitmiştir")
@@ -658,7 +701,9 @@ def obssil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
+        os.system("sudo snap remove obs-studio")
         os.system("sudo apt-get purge obs-studio* -y")
         yazi2.config(text="OBS Studio ekran kaydedicisi programının kaldırılma işlemi bitmiştir.")  
         buton.config(text="Ana menüye dön",command=islemsecim)
@@ -680,6 +725,7 @@ def libreofficesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge libreoffice* -y")
         yazi2.config(text="LibreOffice ofis programının kaldırılma işlemi bitmiştir.")
@@ -701,6 +747,7 @@ def VLCsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo snap remove vlc")
         os.system("sudo apt autoremove vlc")
@@ -725,6 +772,7 @@ def lutrissil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge lutris* -y")
         yazi2.config(text="Lutris programının kaldırılma işlemi bitirilmiştir.")
@@ -747,6 +795,7 @@ def winesil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge wine* -y")
         yazi2.config(text="WINE programının kaldırılma işlemi bitmiştir.")
@@ -769,6 +818,7 @@ def firefoxsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge firefox* -y")
         os.system("sudo snap remove firefox")
@@ -792,7 +842,9 @@ def chromiumsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
+        os.system("sudo snap remove chromium")
         os.system("sudo apt purge chromium* -y")
         yazi2.config(text="Chromium internet tarayıcısının kaldırılma işlemi bitmiştir.")
         buton.config(text="Ana menüye dön",command=islemsecim)
@@ -814,6 +866,7 @@ def planksil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge plank* -y")
         yazi2.config(text="Plank programının kaldırılma işlemi bitmiştir.")
@@ -835,6 +888,7 @@ def gimpsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge gimp* -y")
         os.system("sudo snap remove gimp")
@@ -858,9 +912,10 @@ def kodisil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge kodi* -y")
-        yazi2.config(text="KODI programının kurulumu bitmiştir")
+        yazi2.config(text="KODI programının kaldırılma işlemi bitmiştir.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -880,6 +935,7 @@ def kodikur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt-get install software-properties-common -y")
         os.system("sudo add-apt-repository ppa:team-xbmc/ppa -y")
@@ -905,6 +961,7 @@ def gpartedsil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge gparted* -y")
         yazi2.config(text="GPARTED programının kaldırılma işlemi bitmiştir.")
@@ -927,8 +984,10 @@ def audacitysil():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge audacity* -y")
+        os.system("sudo snap remove audacity")
         yazi2.config(text="Audacity programının kaldırılma işlemi bitmiştir.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
@@ -949,6 +1008,7 @@ def programsil():
     islemsecimbuton10.config(text="KODİ'i kaldır",command=kodisil)
     islemsecimbuton11.config(text="GPARTED'i kaldır",command=gpartedsil)
     islemsecimbuton12.config(text="AudaCity'i kaldır",command=audacitysil)
+    islemsecimbuton13.config(text="Programı kapat",command=programkapat)
 def libreofficekur():
     yazi2.config(text="LibreOffice ofis programı kuruluyor, indirme süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
@@ -964,6 +1024,7 @@ def libreofficekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo add-apt-repository ppa:libreoffice/ppa -y")
         os.system("sudo apt update -y")
@@ -990,6 +1051,7 @@ def guncellemekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt update -y")
         os.system("sudo apt upgrade -y")
@@ -1014,6 +1076,7 @@ def gimpkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install snap -y")
         os.system("sudo snap install gimp")
@@ -1037,9 +1100,11 @@ def plankkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install plank -y")
         yazi2.config(text="Plank programının kurulumu bitmiştir.")
+        buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)  
@@ -1058,6 +1123,7 @@ def cupskur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install cups")
         yazi2.config(text="CUPS yazıcı yöneticisinin kurulumu bitmiştir.")
@@ -1080,8 +1146,10 @@ def obskur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
-        os.system("sudo apt-get install obs-studio -y")
+        os.system("sudo apt install snapd -y")
+        os.system("sudo snap install obs-studio")
         yazi2.config(text="OBS Studio ekran kaydedicisinin kurulumu bitmiştir.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
@@ -1102,6 +1170,7 @@ def VLCkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install snap -y")
         os.system("sudo snap install vlc")
@@ -1125,6 +1194,7 @@ def hatacoz():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
 def kalitool():
     yazi2.config(text="Kali araçları kuruluyor, indirme süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
@@ -1140,6 +1210,7 @@ def kalitool():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         dosyailkhal=open("/etc/apt/sources.list", "r")
         dosyailkhaloku=dosyailkhal.read()
@@ -1149,7 +1220,7 @@ def kalitool():
             dosyasonhal.seek(0)
             dosyasonhal.write("#deb Index of /kali kali-rolling main non-free contrib\n"+veri)
             dosyasonhal.close()
-        os.system('sudo apt-get -f install acccheck ace-voip amap automater braa casefile cdpsnarf cisco-torch cookie-cadger copy-router-config dmitry dnmap dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk fragroute fragrouter ghost-phisher golismero goofile lbd maltego-teeth masscan metagoofil miranda nmap p0f parsero recon-ng set smtp-user-enum snmpcheck sslcaudit sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark wol-e xplico ismtp intrace hping3 bbqsql bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant hexorbase jsql lynis nmap ohrwurm openvas-cli openvas-manager openvas-scanner oscanner powerfuzzer sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker ghost-phisher giskismet gqrx kalibrate-rtl killerbee kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey wifitap wifite apache-users arachni bbqsql blindelephant burpsuite cutycapt davtest deblaze dirb dirbuster fimap funkload grabber jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero plecost powerfuzzer proxystrike recon-ng skipfish sqlmap sqlninja sqlsus ua-tester uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat cymothoa dbd dns2tcp http-tunnel httptunnel intersect nishang polenum powersploit pwnat ridenum sbd u3-pwn webshells weevely casefile cutycapt dos2unix dradis keepnote magictree metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set shellnoob sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw cuckoo dc3dd ddrescue dumpzilla extundelete foremost galleta guymager iphone-backup-analyzer p0f pdf-parser pdfid pdgmail peepdf volatility xplico dhcpig funkload iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos acccheck burpsuite cewl chntpw cisco-auditing-tool cmospwd creddump crunch findmyhash gpp-decrypt hash-identifier hexorbase john johnny keimpx maltego-teeth maskprocessor multiforcer ncrack oclgausscrack pack patator polenum rainbowcrack rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar python-distorm3 edb-debugger jad javasnoop jd ollydbg smali valgrind yara android-sdk apktool arduino dex2jar sakis3g smali -y && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/")')
+        os.system('sudo apt-get -f install acccheck ace-voip amap automater braa casefile cdpsnarf cisco-torch cookie-cadger copy-router-config dmitry dnmap dnsenum dnsmap dnsrecon dnstracer dnswalk dotdotpwn enum4linux enumiax exploitdb fierce firewalk fragroute fragrouter ghost-phisher golismero goofile lbd maltego-teeth masscan metagoofil miranda nmap p0f parsero recon-ng set smtp-user-enum snmpcheck sslcaudit sslsplit sslstrip sslyze thc-ipv6 theharvester tlssled twofi urlcrazy wireshark wol-e xplico ismtp intrace hping3 bbqsql bed cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch copy-router-config doona dotdotpwn greenbone-security-assistant hexorbase jsql lynis nmap ohrwurm openvas-cli openvas-manager openvas-scanner oscanner powerfuzzer sfuzz sidguesser siparmyknife sqlmap sqlninja sqlsus thc-ipv6 tnscmd10g unix-privesc-check yersinia aircrack-ng asleap bluelog blueranger bluesnarfer bully cowpatty crackle eapmd5pass fern-wifi-cracker ghost-phisher giskismet gqrx kalibrate-rtl killerbee kismet mdk3 mfcuk mfoc mfterm multimon-ng pixiewps reaver redfang spooftooph wifi-honey wifitap wifite apache-users arachni bbqsql blindelephant burpsuite cutycapt davtest deblaze dirb dirbuster fimap funkload grabber jboss-autopwn joomscan jsql maltego-teeth padbuster paros parsero plecost powerfuzzer proxystrike recon-ng skipfish sqlmap sqlninja sqlsus ua-tester uniscan vega w3af webscarab websploit wfuzz wpscan xsser zaproxy burpsuite dnschef fiked hamster-sidejack hexinject iaxflood inviteflood ismtp mitmproxy ohrwurm protos-sip rebind responder rtpbreak rtpinsertsound rtpmixsound sctpscan siparmyknife sipp sipvicious sniffjoke sslsplit sslstrip thc-ipv6 voiphopper webscarab wifi-honey wireshark xspy yersinia zaproxy cryptcat cymothoa dbd dns2tcp http-tunnel httptunnel intersect nishang polenum powersploit pwnat ridenum sbd u3-pwn webshells weevely casefile cutycapt dos2unix dradis keepnote magictree metagoofil nipper-ng pipal armitage backdoor-factory cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-torch crackle jboss-autopwn linux-exploit-suggester maltego-teeth set shellnoob sqlmap thc-ipv6 yersinia beef-xss binwalk bulk-extractor chntpw cuckoo dc3dd ddrescue dumpzilla extundelete foremost galleta guymager iphone-backup-analyzer p0f pdf-parser pdfid pdgmail peepdf volatility xplico dhcpig funkload iaxflood inviteflood ipv6-toolkit mdk3 reaver rtpflood slowhttptest t50 termineter thc-ipv6 thc-ssl-dos acccheck burpsuite cewl chntpw cisco-auditing-tool cmospwd creddump crunch findmyhash gpp-decrypt hash-identifier hexorbase john johnny keimpx maltego-teeth maskprocessor multiforcer ncrack oclgausscrack pack patator polenum rainbowcrack rcracki-mt rsmangler statsprocessor thc-pptp-bruter truecrack webscarab wordlists zaproxy apktool dex2jar python-distorm3 edb-debugger jad javasnoop jd ollydbg smali valgrind yara android-sdk apktool arduino dex2jar sakis3g smali -y && wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/") && sudo apt install aircrack-ng ')
         dosyafinal=open("/etc/apt/sources.list", "w")
         dosyafinal.write(dosyailkhaloku)
         dosyafinal.close()
@@ -1174,6 +1245,7 @@ def lutriskur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system('echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list')
         os.system("wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -")
@@ -1199,6 +1271,7 @@ def winekur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo dpkg --add-architecture i386")
         os.system("sudo apt install wine-stable -y")
@@ -1222,8 +1295,8 @@ def firefoxkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
-    try: 
-        os.system("sudo apt install snapd -y")
+    islemsecimbuton13.destroy()
+    try:
         os.system("sudo snap install firefox")
         yazi2.config(text="Firefox internet tarayıcısının kurulumu bitmiştir.")
     except:
@@ -1244,8 +1317,10 @@ def chromiumkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
-    try:  
-        os.system("sudo apt install chromium -y")
+    islemsecimbuton13.destroy()
+    try:
+        os.system("sudo apt install snapd -y")
+        os.system("sudo snap install chromium")
         yazi2.config(text="Chromium internet tarayıcısının kurulumu bitmiştir.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
@@ -1266,10 +1341,10 @@ def audacitykur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
-        os.system("sudo add-apt-repository ppa:ubuntuhandbook1/audacity -y")
-        os.system("sudo apt update -y")
-        os.system("sudo apt install audacity -y")
+        os.system("sudo apt install snapd -y")
+        os.system("sudo snap install audacity")
         yazi2.config(text="Audacity programının kurulumu bitmiştir.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
@@ -1290,6 +1365,7 @@ def kodikur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt-get install software-properties-common -y")
         os.system("sudo add-apt-repository ppa:team-xbmc/ppa -y")
@@ -1315,6 +1391,7 @@ def gpartedkur():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install gparted -y")
         yazi2.config(text="GPARTED programının kurulumu bitmiştir.")
@@ -1337,6 +1414,7 @@ def programkurucu():
     islemsecimbuton10.config(text="AudaCity'i indir",command=audacitykur)
     islemsecimbuton11.config(text="KODI'i indir",command=kodikur)
     islemsecimbuton12.config(text="GPARTED'i indir",command=gpartedkur)
+    islemsecimbuton13.config(text="Programı kapat",command=programkapat)
 def grubc():
     yazi2.config(text="GRUB Customizer kuruluyor, indirme süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
@@ -1352,8 +1430,9 @@ def grubc():
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
     islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
     try:
-        os.system("sudo apt install grub-costumizer -y")
+        os.system("sudo apt install grub-customizer -y")
         yazi2.config(text="GRUB costumizer programının kurulumu bitmiştir. Yapılandırma başlatılıyor.")
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1361,6 +1440,81 @@ def grubc():
     os.system("sudo grub-customizer")
     yazi2.config(text="GRUB yapılandırılması bitmiştir.")
     buton.config(text="Ana menüye dön",command=islemsecim)
+def programversiyon():
+    islemsecimbuton1.destroy()
+    islemsecimbuton2.destroy()
+    islemsecimbuton3.destroy()
+    islemsecimbuton4.destroy()
+    islemsecimbuton5.destroy()
+    islemsecimbuton6.destroy()
+    islemsecimbuton7.destroy()
+    islemsecimbuton8.destroy()
+    islemsecimbuton9.destroy()
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
+    surumnot=open("/usr/local/bin/TerminaldenKurtulun/surum.txt", "r")
+    surumbilgisi=surumnot.read()
+    surumnot.close()
+    surumbilgisi=surumbilgisi+"iyi kullanmalar dileriz."
+    yazi2.config(text="Programın sürümü = "+ surumbilgisi)
+    buton.config(text="Ana menüye dön",command=islemsecim)
+def iletisimbilgi():
+    islemsecimbuton1.destroy()
+    islemsecimbuton2.destroy()
+    islemsecimbuton3.destroy()
+    islemsecimbuton4.destroy()
+    islemsecimbuton5.destroy()
+    islemsecimbuton6.destroy()
+    islemsecimbuton7.destroy()
+    islemsecimbuton8.destroy()
+    islemsecimbuton9.destroy()
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
+    yazi2.config(text="Bize ulaşabilmeniz için Discord sunucumuz: \n https://discord.com/invite/sWWbY4JNcD \n iyi kullanmalar dileriz.")
+    buton.config(text="Ana menüye dön",command=islemsecim)
+def tkguncelle():
+    yazi2.config(text="Terminalden kurtulun güncelleniyor, bu süre zarfında internet bağlantınızın var olması gerekmektedir, güncelleme sırasında program kapatılacak ve güncelleme işlemi başlayacaktır. \n Güncelleme işlemi 5 saniye sonra başlatılacaktır.")
+    buton.config(text="Vazgeç ve programı kapat",command=programkapat)
+    time.sleep(5)
+    islemsecimbuton1.destroy()
+    islemsecimbuton2.destroy()
+    islemsecimbuton3.destroy()
+    islemsecimbuton4.destroy()
+    islemsecimbuton5.destroy()
+    islemsecimbuton6.destroy()
+    islemsecimbuton7.destroy()
+    islemsecimbuton8.destroy()
+    islemsecimbuton9.destroy()
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
+    try:
+        yazi2.config(text="Güncelleme başlamıştır, lütfen işlem süresi boyunca bekleyiniz.")
+        os.system("sudo python3 /usr/local/bin/TerminaldenKurtulun/guncellestirici.py")
+    except:
+        yazi2.config(text="Bir hata oluştu, lütfen programı kapatıp tekrar deneyiniz.")
+        buton.config(text="Programı kapat",command=programkapat)
+def programguncelle():
+    islemsecimbuton4.destroy()
+    islemsecimbuton5.destroy()
+    islemsecimbuton6.destroy()
+    islemsecimbuton7.destroy()
+    islemsecimbuton8.destroy()
+    islemsecimbuton9.destroy()
+    islemsecimbuton10.destroy()
+    islemsecimbuton11.destroy()
+    islemsecimbuton12.destroy()
+    islemsecimbuton13.destroy()
+    yazi2.config(text="Terminalden kurtulun, son kullanıcı için daha kolay bir deneyim sağlamak için geliştirilmiş, GPL 3.0 ile lisanslanmış bir özgür yazılım ürünüdür.")
+    buton.config(text="Programı güncelle(internet bağlantısı gereklidir)",command=tkguncelle)
+    islemsecimbuton1.config(text="Sürüm bilgisi",command=programversiyon)
+    islemsecimbuton2.config(text="İletişim",command=iletisimbilgi)
+    islemsecimbuton3.config(text="Programı kapat",command=programkapat)
 def islemsecim():
     a=os.name
     if a == "nt":
@@ -1381,6 +1535,7 @@ def islemsecim():
     global islemsecimbuton10
     global islemsecimbuton11
     global islemsecimbuton12
+    global islemsecimbuton13
     islemsecimbuton6=Button(pencere)
     islemsecimbuton6.config(text="Program kaldır",command=programsil)
     islemsecimbuton6.pack()
@@ -1414,9 +1569,12 @@ def islemsecim():
     islemsecimbuton11=Button(pencere)
     islemsecimbuton11.config(text="Programı kapat",command=programkapat)
     islemsecimbuton12=Button(pencere)
+    islemsecimbuton13=Button(pencere)
+    islemsecimbuton13.config(text="Terminalden Kurtulun'u güncelle",command=programguncelle)
     islemsecimbuton12.config(text="GRUB'u yapılandır.",command=grubc)
     islemsecimbuton12.pack()
     islemsecimbuton11.pack()
+    islemsecimbuton13.pack()
     islemsecimbuton6.config(text="Program kaldır",command=programsil)
     islemsecimbuton1.config(text="Eski paket temizleyicisi",command=eskipaketsil)
     islemsecimbuton2.config(text="Hata çözücü",command=hatacoz)
@@ -1427,8 +1585,9 @@ def islemsecim():
     islemsecimbuton8.config(text="CUPS'ı yapılandır",command=cupsayar)
     islemsecimbuton9.config(text="Plank'ı yapılandır",command=plankayar)
     islemsecimbuton10.config(text="Masaüstü ortamı silicisi",command=desilici)
-    islemsecimbuton11.config(text="Programı kapat",command=programkapat)
+    islemsecimbuton11.config(text="Terminalden Kurtulun'u güncelle",command=programguncelle)
     islemsecimbuton12.config(text="GRUB'u yapılandır.",command=grubc)
+    islemsecimbuton13.config(text="Programı kapat",command=programkapat)
 pencere=Tk()
 pencere.title("Terminalden kurtulun! Son kullanıcı için kolaylaştırılmıştır.")
 
