@@ -23,7 +23,7 @@ def gnomekur():
     try:
         os.system("sudo apt install gnome -y")
         os.system("sudo apt install gnome-shell")
-        yazi2.config(text="GNOME masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="GNOME masaüstü ortamı kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -46,7 +46,7 @@ def kdekur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install kde-plasma-desktop -y")
-        yazi2.config(text="KDE Plasma masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="KDE Plasma masaüstü ortamı kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -69,7 +69,7 @@ def cinnamonkur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install cinnamon -y")
-        yazi2.config(text="Cinnamon masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="Cinnamon masaüstü ortamı kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -92,7 +92,7 @@ def lxdekur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install lxde -y")
-        yazi2.config(text="LXDE masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="LXDE masaüstü ortamı kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -119,7 +119,7 @@ def lxqtkur():
         os.system("sudo apt-get update")
         os.system("sudo apt upgrade")
         os.system("sudo apt install openbox pcmanfm-qt lxqt-admin lxqt-common lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-panel lxqt-policykit lxqt-powermanagement lxqt-qtplugin lxqt-runner lxqt-session lxqt-sudo")
-        yazi2.config(text="LXQT masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="LXQT masaüstü kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -144,7 +144,7 @@ def matekur():
         os.system("sudo apt install mate-desktop-environment-core -y")
         os.system("sudo apt install mate-desktop-environment -y")
         os.system("sudo apt install mate-desktop-environment-extras -y")
-        yazi2.config(text="MATE masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="MATE masaüstü ortamı kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -167,7 +167,7 @@ def openboxkur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install openbox -y")
-        yazi2.config(text="OpenBox masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="OpenBox pencere yöneticisi kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -190,7 +190,7 @@ def xfcekur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install xfce4 -y")
-        yazi2.config(text="XFCE masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="XFCE masaüstü ortamı kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -213,7 +213,7 @@ def i3kur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install i3 -y")
-        yazi2.config(text="İ3 masaüstü ortamı kurma işlemi tamamlandı.")
+        yazi2.config(text="i3 pencere yöneticisi kurulumu tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -455,7 +455,7 @@ def openboxsil():
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim) 
 def i3sil():
-    yazi2.config(text="İ3 kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
+    yazi2.config(text="i3 kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -473,13 +473,13 @@ def i3sil():
     try:
         os.system("sudo apt purge i3* -y")
         os.system("sudo apt autoremove -y")
-        yazi2.config(text="İ3 masaüstü ortamı kaldırma işlemi tamamlandı.")
+        yazi2.config(text="i3 pencere yöneticisi kaldırma işlemi tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim) 
 def ddesil():
-    yazi2.config(text="Deepin DE kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
+    yazi2.config(text="Deepin masaüstü ortamı kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -497,7 +497,7 @@ def ddesil():
     try:
         os.system("sudo apt purge dde* -y")
         os.system("sudo apt autoremove -y")
-        yazi2.config(text="Deepin DE masaüstü ortamı kaldırma işlemi tamamlandı.")
+        yazi2.config(text="Deepin masaüstü ortamı kaldırma işlemi tamamlandı.")
         buton.config(text="Bilgisayarı yeniden başlat",command=reboot)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -512,7 +512,7 @@ def desilici():
     islemsecimbuton5.config(text="Mate'i kaldır",command=matesil)
     islemsecimbuton6.config(text="XFCE'i kaldır",command=xfcesil)
     islemsecimbuton7.config(text="OpenBox'ı kaldır",command=openboxsil)
-    islemsecimbuton8.config(text="İ3'ü kaldır",command=i3sil)
+    islemsecimbuton8.config(text="i3'ü kaldır",command=i3sil)
     islemsecimbuton9.config(text="Deepin DE'yi kaldır",command=ddesil)
     islemsecimbuton10.destroy()
     islemsecimbuton11.destroy()
@@ -536,7 +536,7 @@ def plankayar():
     islemsecimbuton13.destroy()
     try:
         os.system("plank --preferences")
-        yazi2.config(text="Plank için yaptığınız yapılandırma işlemi bitmiştir.")
+        yazi2.config(text="Plank için yaptığınız yapılandırma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -558,7 +558,7 @@ def cupsayar():
     islemsecimbuton13.destroy()
     try:
         os.system("x-www-browser localhost:631")
-        yazi2.config(text="CUPS için yaptığınız yapılandırma işlemi bitmiştir.")
+        yazi2.config(text="CUPS için yaptığınız yapılandırma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -641,7 +641,7 @@ def kilitacar():
 def programkapat():
     exit()
 def wineayar():
-    yazi2.config(text="Bu işlem sırasında daha önceden WINE programını kurmuş olmanız gerekmektedir.")
+    yazi2.config(text="Bu işlem sırasında daha önceden WINE paketini kurmuş olmanız gerekmektedir.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -658,13 +658,13 @@ def wineayar():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo winecfg")
-        yazi2.config(text="WINE için yaptığınız yapılandırma işlemi bitirilmiştir.")
+        yazi2.config(text="WINE için yaptığınız yapılandırma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)
 def cupssil():
-    yazi2.config(text="CUPS yazıcı yöneticisi programı kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
+    yazi2.config(text="CUPS yazıcı yöneticisi kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -681,13 +681,13 @@ def cupssil():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge cups* -y")
-        yazi2.config(text="CUPS yazıcı yöneticisi programının kaldırılma işlemi bitmiştir")
+        yazi2.config(text="CUPS yazıcı yöneticisi programının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)
 def obssil():
-    yazi2.config(text="OBS Studio ekran kaydedicisi programı kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
+    yazi2.config(text="OBS Studio kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -705,7 +705,7 @@ def obssil():
     try:
         os.system("sudo snap remove obs-studio")
         os.system("sudo apt-get purge obs-studio* -y")
-        yazi2.config(text="OBS Studio ekran kaydedicisi programının kaldırılma işlemi bitmiştir.")  
+        yazi2.config(text="OBS Studio programının kaldırılma işlemi tamamlanmıştır.")  
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -728,12 +728,12 @@ def libreofficesil():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge libreoffice* -y")
-        yazi2.config(text="LibreOffice ofis programının kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="LibreOffice ofis programının kaldırılma işlemi tamamlanmıştır.")
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim) 
 def VLCsil():
-    yazi2.config(text="VLC oynatıcısı kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz")
+    yazi2.config(text="VLC ortam oynatıcısı kaldırılıyor, işlem süresi boyunca lütfen bekleyiniz")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -752,13 +752,13 @@ def VLCsil():
         os.system("sudo snap remove vlc")
         os.system("sudo apt autoremove vlc")
         os.system("sudo apt purge vlc*")
-        yazi2.config(text="VLC oynatıcısının kaldırılma işlemi bitirilmiştir.")
+        yazi2.config(text="VLC ortamoynatıcısının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)
 def lutrissil():
-    yazi2.config(text="Luis programı kaldırılıyor , işlem süresi boyunca lütfen bekleyiniz.")
+    yazi2.config(text="Lutris programı kaldırılıyor , işlem süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -775,7 +775,7 @@ def lutrissil():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge lutris* -y")
-        yazi2.config(text="Lutris programının kaldırılma işlemi bitirilmiştir.")
+        yazi2.config(text="Lutris programının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -798,7 +798,7 @@ def winesil():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge wine* -y")
-        yazi2.config(text="WINE programının kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="WINE paketinin kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -822,7 +822,7 @@ def firefoxsil():
     try:
         os.system("sudo apt purge firefox* -y")
         os.system("sudo snap remove firefox")
-        yazi2.config(text="Firefox internet taraycısının kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="Firefox internet taraycısının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -846,7 +846,7 @@ def chromiumsil():
     try:
         os.system("sudo snap remove chromium")
         os.system("sudo apt purge chromium* -y")
-        yazi2.config(text="Chromium internet tarayıcısının kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="Chromium internet tarayıcısının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -869,7 +869,7 @@ def planksil():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge plank* -y")
-        yazi2.config(text="Plank programının kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="Plank programının kaldırılma işlemi tamamlanmıştır.")
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)  
@@ -892,7 +892,7 @@ def gimpsil():
     try:
         os.system("sudo apt purge gimp* -y")
         os.system("sudo snap remove gimp")
-        yazi2.config(text="GIMP programın kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="GIMP programının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -941,7 +941,7 @@ def kodikur():
         os.system("sudo add-apt-repository ppa:team-xbmc/ppa -y")
         os.system("sudo apt update -y")
         os.system("sudo apt install kodi -y")
-        yazi2.config(text="KODI programının kurulumu bitmiştir")
+        yazi2.config(text="KODI programının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -964,7 +964,7 @@ def gpartedsil():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt purge gparted* -y")
-        yazi2.config(text="GPARTED programının kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="GPARTED programının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -988,7 +988,7 @@ def audacitysil():
     try:
         os.system("sudo apt purge audacity* -y")
         os.system("sudo snap remove audacity")
-        yazi2.config(text="Audacity programının kaldırılma işlemi bitmiştir.")
+        yazi2.config(text="Audacity programının kaldırılma işlemi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1031,7 +1031,7 @@ def libreofficekur():
         os.system("sudo apt install libreoffice -y")
         os.system("sudo add-apt-repository --remove ppa:libreoffice/ppa -y")
         os.system("sudo apt update -y")
-        yazi2.config(text="LibreOffice ofis programının kurulumu bitmiştir.")
+        yazi2.config(text="LibreOffice ofis programının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1056,7 +1056,7 @@ def guncellemekur():
         os.system("sudo apt update -y")
         os.system("sudo apt upgrade -y")
         os.system("sudo apt dist-upgrade -y")
-        yazi2.config(text="Sistem güncellemesi işlemi bitmiştir.")
+        yazi2.config(text="Sistem güncellemesi tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1080,7 +1080,7 @@ def gimpkur():
     try:
         os.system("sudo apt install snap -y")
         os.system("sudo snap install gimp")
-        yazi2.config(text="GIMP programın kurulumu bitmiştir.")
+        yazi2.config(text="GIMP programın kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1103,7 +1103,7 @@ def plankkur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo apt install plank -y")
-        yazi2.config(text="Plank programının kurulumu bitmiştir.")
+        yazi2.config(text="Plank programının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1132,7 +1132,7 @@ def cupskur():
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)  
 def obskur():
-    yazi2.config(text="OBS Studio ekran kaydedicisi kuruluyor, indirme süresi boyunca lütfen bekleyiniz.")
+    yazi2.config(text="OBS Studio kuruluyor, indirme süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -1150,13 +1150,13 @@ def obskur():
     try:
         os.system("sudo apt install snapd -y")
         os.system("sudo snap install obs-studio")
-        yazi2.config(text="OBS Studio ekran kaydedicisinin kurulumu bitmiştir.")
+        yazi2.config(text="OBS Studio kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)  
 def VLCkur():
-    yazi2.config(text="VLC oynatıcısı kuruluyor, indirme süresi boyunca lütfen bekleyiniz.")
+    yazi2.config(text="VLC ortam oynatıcısı kuruluyor, indirme süresi boyunca lütfen bekleyiniz.")
     time.sleep(0.1)
     islemsecimbuton1.destroy()
     islemsecimbuton2.destroy()
@@ -1174,7 +1174,7 @@ def VLCkur():
     try:
         os.system("sudo apt install snap -y")
         os.system("sudo snap install vlc")
-        yazi2.config(text="VLC oynatıcısının kurulumu bitmiştir.")
+        yazi2.config(text="VLC ortam oynatıcısının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1225,7 +1225,7 @@ def kalitool():
         dosyafinal.write(dosyailkhaloku)
         dosyafinal.close()
         os.system("sudo apt update -y")
-        yazi2.config(text="Kali araçlarının kurulumu bitmiştir.")
+        yazi2.config(text="Kali araçlarının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1251,7 +1251,7 @@ def lutriskur():
         os.system("wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -")
         os.system('sudo apt update -y')
         os.system('sudo apt install lutris -y')
-        yazi2.config(text="Lutris programının kurulumu bitmiştir.")
+        yazi2.config(text="Lutris programının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1275,7 +1275,7 @@ def winekur():
     try:
         os.system("sudo dpkg --add-architecture i386")
         os.system("sudo apt install wine-stable -y")
-        yazi2.config(text="WINE programının kurulumu bitmiştir.")
+        yazi2.config(text="WINE paketinin kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1298,7 +1298,7 @@ def firefoxkur():
     islemsecimbuton13.destroy()
     try:
         os.system("sudo snap install firefox")
-        yazi2.config(text="Firefox internet tarayıcısının kurulumu bitmiştir.")
+        yazi2.config(text="Firefox internet tarayıcısının kurulumu tamamlanmıştır.")
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)
@@ -1321,7 +1321,7 @@ def chromiumkur():
     try:
         os.system("sudo apt install snapd -y")
         os.system("sudo snap install chromium")
-        yazi2.config(text="Chromium internet tarayıcısının kurulumu bitmiştir.")
+        yazi2.config(text="Chromium internet tarayıcısının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1345,7 +1345,7 @@ def audacitykur():
     try:
         os.system("sudo apt install snapd -y")
         os.system("sudo snap install audacity")
-        yazi2.config(text="Audacity programının kurulumu bitmiştir.")
+        yazi2.config(text="Audacity programının kurulumu tamamlanmıştır.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     except:
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
@@ -1438,7 +1438,7 @@ def grubc():
         yazi2.config(text="Bir şeyler yanlış gitti! Lütfen tekrar deneyiniz.")
         buton.config(text="Ana menüye dön",command=islemsecim)
     os.system("sudo grub-customizer")
-    yazi2.config(text="GRUB yapılandırılması bitmiştir.")
+    yazi2.config(text="GRUB yapılandırılması tamamlanmıştır.")
     buton.config(text="Ana menüye dön",command=islemsecim)
 def programversiyon():
     islemsecimbuton1.destroy()
@@ -1518,7 +1518,7 @@ def programguncelle():
 def islemsecim():
     a=os.name
     if a == "nt":
-        yazi2.config(text="Bu program Windows OS(işletim sistemi) çalışmaz,lütfen Debian yada Ubuntu temelli bir GNU/Linux dağıtımı ile programı kullanmayı deneyiniz.")
+        yazi2.config(text="Bu program Windows üzerinde çalışmaz, lütfen Debian yada Ubuntu temelli bir GNU/Linux dağıtımı ile programı kullanmayı deneyiniz.")
         buton.config("Programı kapat",command=programkapat)
 
     yazi2.config(text="Lütfen yapmak istediğiniz işlemi seçiniz.")
@@ -1596,7 +1596,7 @@ fotocikti=Label(pencere, image=fotograf)
 fotocikti.pack()
 
 yazi=Label(pencere)
-yazi.config(text="Programın yapımcısı=Ram_kafasi, Merhabalar, Terminalden kurtulun programını tercih ettiğiniz için teşekkürler, başınıza gelebilecek herhangi bir durumdan sorumluluk almayacağımızı belirtiriz.",font ="arial 10 bold")
+yazi.config(text="Programın yapımcısı: Ram_kafasi, Merhabalar, Terminalden kurtulun programını tercih ettiğiniz için teşekkürler, başınıza gelebilecek herhangi bir durumdan sorumluluk almayacağımızı belirtiriz.",font ="arial 10 bold")
 yazi.pack()
 
 yazi2=Label(pencere)
